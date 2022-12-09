@@ -454,7 +454,7 @@ ul.social_icon li a:hover {
 }
 
 .read_more:hover {
-     background: #ffffff;
+     background: #FFBB00;
      color: #fff;
      transition: ease-in all 0.5s;
 }
@@ -465,7 +465,7 @@ ul.social_icon li a:hover {
 .protien_main {
      padding-top: 80px;
      padding-bottom: 0px;
-     background-color: #f8f8f8;
+     background-color: #FDFEFE;
      position: relative;
 }
 
@@ -594,6 +594,7 @@ ul.social_icon li a:hover {
 
 .body_img figure img {
      width: 100%;
+     float: left;
 }
 
 
@@ -729,7 +730,6 @@ ul.social_icon li a:hover {
      padding: 0 15px 0 0px;
      height: 40px;
      border: inherit;
-     margin-top: 70px;
 }
 
 .main_form .send_btn {
@@ -748,7 +748,7 @@ ul.social_icon li a:hover {
 }
 
 .main_form .send_btn:hover {
-     background-color: #10e678;
+     background-color: #FFBB00;
      transition: ease-in all 0.5s;
      color: #2e2d2d;
 }
@@ -781,7 +781,9 @@ ul.social_icon li a:hover {
 }
 
 .tex_left {
-     float: left;
+     float: inherit;
+     max-width: 50%;
+     height: auto;
 }
 
 .variat {
@@ -851,6 +853,7 @@ ul.link_menu li a:hover {
 
 ul.social2_icon {
      padding-top: 30px;
+     padding-bottom: 30px;
 }
 
 ul.social2_icon li {
