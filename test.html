@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KKBØ - Shop</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="icon/favicon.ico" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- CSS -->
+    <link href="./css/styleproduct.css" rel="stylesheet">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <link rel="stylesheet" href="./css/style_cart.css">
+    <meta name="robots" content="noindex,follow" />
+    <link href="./css/product_desc.css" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/script_test.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+
+    <header>
+      <!-- header inner -->
+      <div class="header">
+      <div class="menu_sitbar">
+         <ul class="menu">
+
+            </li>
+         </ul>
+         <ul class="social_icon">
+            <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="false"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+         </ul>
+      </div>
+      <div class="header_full_bg">
+         <div class="header_top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="#"/></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="banner">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-5">
+                     <div class="banner_text">
+                        <a class="get_btn" href="./index.html" role="button" >Home page</a> 
+                     </div>
+                  </div>
+                  <div class="col-md-7">
+                     <img class="bann_img" src="images/banner_ing.png" alt="#"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   </header>
+
+    <main class="kontainer">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <img id="product_img" class="active" src="images/pro4.png" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div id= "product-description" class="product-description">
+          <span>Hoodie</span>
+          <h1 id="prod_name">KKBØ v2</h1>
+          <p>Best cotton picked by the same guy who are commenting under ur crush pics "Show BOB"</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>Size</span>
+            <button class="btn_size info" id="myBtn">What's your Hoodie size?</button>
+
+
+                     <!-- The Modal -->
+                     <div id="myModal" class="modal">
+
+                     <!-- Modal content -->
+                     <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table style="width:50%">
+                           <tr>
+                             <th>SIZE</th>
+                             <th>LENGTH (CM)</th>
+                             <th>CHEST (CM)</th>
+                             <th>SLEEVE LENGTH (CM)</th>
+                           </tr>
+                           <tr>
+                             <td>XS</td>
+                             <td>68.6</td>
+                             <td>96.5 - 104</td>
+                             <td>85</td>
+                           </tr>
+                           <tr>
+                             <td>S</td>
+                             <td>71</td>
+                             <td>106.7 - 114.3</td>
+                             <td>87.6</td>
+                           </tr>
+                           <tr>
+                              <td>M</td>
+                              <td>73.7</td>
+                              <td>116.8 - 124.5</td>
+                              <td>90.2</td>
+                            </tr>
+                            <tr>
+                              <td>L</td>
+                              <td>76.2</td>
+                              <td>127 - 134.6</td>
+                              <td>92.7</td>
+                            </tr>
+                            <tr>
+                              <td>XL</td>
+                              <td>78.7</td>
+                              <td>137.2 - 144.8</td>
+                              <td>95.3</td>
+                            </tr>
+                         </table>
+                         
+                     </div>
+
+                     </div>
+
+            <div class="cable-choose" id="size">
+              <button id="btn" type="button" onclick="hide_unhide()">XS</button>
+              <button id="btn" type="button" onclick="hide_unhide()">S</button>
+              <button id="btn" type="button" onclick="hide_unhide()">M</button>
+              <button id="btn" type="button" onclick="hide_unhide()">L</button>
+              <button id="btn" type="button" onclick="hide_unhide()">XL</button>
+            </div>
+
+            <span>Quantity</span>
+            <div class="cable-choose" id="quantity_select">
+
+               <form action="#">
+                  <select name="quantity" id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="9">10</option>
+                  </select>
+            </form>
+
+             </div>
+
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span id="prod_price">€39.99</span>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="39.99" id="add_to_cart" style="display: none;">Add To Cart</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <footer>
+      <div class="footer">
+         <div class="daih_bg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <ul class="conta">
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +80 006 008</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Riga, Latvia</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> info@kkbo.pro</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <img class="tex_left" src="images/logo2.png" alt="#"/>
+               </div>
+               <div class=" col-md-3 col-sm-6">
+
+               </div>
+               <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+
+                  <ul class="link_menu">
+
+                  </ul>
+               </div>
+               <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+
+                  <ul class="link_menu">
+
+                  </ul>
+               </div>
+               <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+
+                  <ul class="link_menu">
+
+                  </ul>
+               </div>
+               <div class="col-sm-12">
+                  <ul class="social2_icon">
+                     <li><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a href="javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                     <li><a href="javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <p>Copyright 2022 © KKBØ . All Rights Reserved</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="cd-cart cd-cart--empty js-cd-cart">
+         <a href="#0" class="cd-cart__trigger text-replace">
+            <ul class="cd-cart__count"> <!-- cart items count -->
+               <li>0</li>
+               <li>0</li>
+            </ul> <!-- .cd-cart__count -->
+         </a>
+      
+         <div class="cd-cart__content">
+            <div class="cd-cart__layout">
+               <header class="cd-cart__header">
+                  <span >Cart</span> <span class="cd-cart__undo">Item removed</span>
+               </header>
+               
+               <div class="cd-cart__body">
+                  <ul id="cart_products">
+                  </ul>
+               </div>
+      
+               <footer class="cd-cart__footer">
+                  <a href="javascript:void(0)" id="checkout" class="cd-cart__checkout" onclick=sas()>
+                <em>Checkout - €<span>0</span>
+                  <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+                  </svg>
+                </em>
+               </a>
+               </footer>
+            </div>
+         </div> <!-- .cd-cart__content -->
+      </div> <!-- cd-cart -->
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="./js/cart_util.js"></script> <!-- util functions included in the CodyHouse framework -->
+   <script src="./js/cart.js"></script>
+   <script src="./js/popup_cart.js"></script>
+   <script src="js/choices_cart.js" charset="utf-8"></script>
+  <script src="js/product_desc.js" charset="utf-8"></script>
+</body>
+</html>
+
