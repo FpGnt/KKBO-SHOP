@@ -21,8 +21,15 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    
+    
     .header_top {
-        padding: 35px 70px;
+        padding-top: 2%;
+        display: block;
+        text-align: center;
+    }
+    .header_top img {
+        height:10rem;
     }
     .get_btn {
         max-width: 141px;
@@ -32,18 +39,27 @@
         line-height: 66px;
     }
     .banner_text {
-        margin-top: 45%;
-    }
-    .growyhing .titlepage h2 {
-        font-size: 45px;
-        line-height: 74px;
+        margin-top: 12rem;
+        
+        display: block;
+        text-align:center;
     }
     .body_img::before {
         left: 0;
     }
+
+    .about_img figure img {
+        max-width: 480px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        text-align: center;
+        padding-bottom: 100px;
+        float: left;
+    }
+    
     .header_top {
         padding: 35px 70px;
     }
@@ -60,6 +76,7 @@
     .get_btn {
         max-width: 105px;
         font-size: 12px;
+        margin-top: 60%;
         padding: 8px 0;
         margin-right: 2px;
         height: 42px;
@@ -78,6 +95,22 @@
     .body_img::before {
         left: 0;
     }
+    .about {
+        padding-left: 2em;
+        padding-right:1em;
+    }
+    .about_img figure{
+        display: block;
+        text-align: center;
+    }
+    .about_img figure img {
+        max-width: 380px;
+    }
+    .testimonial{     
+        padding-left: 2em;
+        padding-right:1em;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -126,32 +159,57 @@
     .body_blu_img {
         margin-bottom: 30px;
     }
+    .about {
+        padding-left: 2em;
+        padding-right:1em;
+    }
+    .about_img figure{
+        display: block;
+        text-align: center;
+    }
+    .about_img figure img {
+        max-width: 100%;
+    }
+    
+    .testimonial{     
+        padding-left: 2em;
+        padding-right:1em;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .body_blu_img {
+        max-width: 100%;
+        float: center;
+        text-align: center;
+        width: 100%;
+    }
+    .col-sm-3{
+        padding-top: 80px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 575px) {
     .logo {
         text-align: center !important;
-        padding-bottom: 6px;
         float: left;
     }
     .header_top {
-        padding: 35px 70px;
+        padding: 35px 7px;
     }
     .banner_text {
-        margin-top: 62%;
-        margin-bottom: 0;
-    }
-    .bann_img {
-        height: 240px;
-        padding-left: 62px;
-    }
-    .banner_text h1 {
-        font-size: 31px;
-        line-height: 44px;
+        display: block;
+        text-align: left;
+        margin-top: 40%;
+        margin-bottom: 10px;
     }
     .get_btn {
-        max-width: 107px;
+        max-width: 120px;
         font-size: 12px;
+        margin-top: 20px;
         padding: 8px 0;
         height: 40px;
         margin-right: 0px;
@@ -190,4 +248,18 @@
     .variat {
         padding-bottom: 20px;
     }
-}
+    .about {
+    padding-left: 2em;
+    padding-right:1em;
+    }
+    .about_img figure{
+        display: block;
+        text-align: center;
+    }
+    .about_img figure img {
+        width: 100%;
+    }
+    .testimonial{     
+        padding-left: 2em;
+        padding-right:1em;
+    }
