@@ -15,8 +15,8 @@ data2={
   "shipping_options[0][shipping_rate_data][delivery_estimate][maximum][unit]": "business_day",
   "shipping_options[0][shipping_rate_data][delivery_estimate][maximum][value]": "7",
   "mode": "payment",
-  "success_url": "https://shop.kkbo.pro/success.html",
-  "cancel_url": "https://shop.kkbo.pro/declined.html"
+  "success_url": "https://shop.kkbo.pro/success",
+  "cancel_url": "https://shop.kkbo.pro/declined"
 }
 
 
