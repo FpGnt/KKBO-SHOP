@@ -629,7 +629,6 @@ ul.social_icon li a:hover {
      width: 50px;
      height: 100%;
      top: 0;
-     z-index: 9;
 }
 
 .testimo_ban {
@@ -676,7 +675,6 @@ ul.social_icon li a:hover {
 
 #testimo .carousel-control-prev {
      left: 20px;
-     z-index: 9;
 }
 
 #testimo .carousel-control-next {
